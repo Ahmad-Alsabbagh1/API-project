@@ -8,31 +8,57 @@ body{
     flex-direction: column;
     min-height: 100vh;
     min-width: 100vw;
-    background:rgb(32, 112, 225);
+    background:linear-gradient(rgb(70, 137, 231), rgb(24, 51, 206));
+    font-family: sans-serif;
 }
 header{
     display: flex;
     max-height: 15vh;
     min-width: 100vw;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.search-wrap{
+.logo img{
+    width : 13vw;
     margin-top: 20px;
-    max-height: 5vh;
+}
+.logo{
     width: 20vw;
     
 }
+.search-wrap{
+    display:flex;
+    margin-top: 20px;
+    max-height: 5vh;
+    width: 40vw;
+    
+}
+
 #search{
     text-align: center;
-    height: 200%;
+    font-size: large;
+    height: 150%;
     border-radius: 15px;
-    width: 100%;
+    width:55%;
+}
+::placeholder{
+    text-align: start;
+    font-size: medium;
+
+    
+}
+#search-button{
+    float:right;
+    border-radius:15px;
+    height: 150%;
+    width: 20%;
+    margin-left : 10px;
+    font-size: medium;
 }
 .pictures-div{
-    align-self: center;
+    margin-left: 20px;
     margin-top: 2em ;
     display: grid;
-    grid-template-columns: repeat(4,350px);
+    grid-template-columns: repeat(3, 0.25fr);
    grid-gap: 8px;
  
 
