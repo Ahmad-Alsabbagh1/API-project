@@ -1,6 +1,6 @@
-const searchImage = (query) => {
+const searchImage = (query = "nature") => {
   const apiKey = "563492ad6f91700001000001ca06e45aef8d4018b4e7015052fa73fd";
-  const url = `https://api.pexels.com/v1/search?query=${query}&per_page=80`;
+  const url = `https://api.pexels.com/v1/search?query=${query}&per_page=80&orientation=landscape`;
   fetch(url, {
     method: "get",
     headers: {
@@ -9,7 +9,52 @@ const searchImage = (query) => {
     },
   })
     .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.log(error));
+    .then((data) => showImages(data))
+    .catch((error) =>
+      alert(
+        "Oops, something went wrong: " +
+          error +
+          ", Check internet connection and refresh the page"
+      )
+    );
 };
-searchImage("puppy");
+
+const showImages = (pictures) => {
+  const wallpapers = pictures.photos;
+
+  wallpapers.forEach((pic) => {
+    appendImage(pic.src.large, pic.alt, pic.photographer, pic.url);
+  });
+};
+
+const appendImage = (url, alt, photographer, href) => {
+  const picContainer = document.querySelector(".pictures-div");
+  const picDiv = document.createElement("div");
+  const pic = document.createElement("img");
+  const link = document.createElement("a");
+  link.href = href;
+  link.target = "_blank"; //To open image in new tab
+  link.appendChild(pic);
+  pic.setAttribute("id", "wallpaper");
+  pic.src = url;
+  pic.alt = alt;
+  pic.title = photographer;
+  picDiv.appendChild(link);
+  picContainer.appendChild(picDiv);
+};
+window.onload = () => {
+  document.querySelector(".loader").style.display = "none";
+  const searchField = document.querySelector("#search");
+  const searchButton = document.querySelector("#search-button");
+  searchButton.addEventListener("click", () => {
+    document.querySelector(".pictures-div").innerHTML = "";
+    searchImage(searchField.value);
+  });
+  //   To be able to search using the keyboard key "Enter"
+  searchField.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      searchButton.click();
+    }
+  });
+};
