@@ -45,7 +45,7 @@ const appendImage = (url, alt, photographer, href) => {
 
 window.onload = () => {
   document.querySelector(".loader").style.display = "none";
-  const searchField = document.querySelector("#search");
+  const searchField = document.querySelector("#search-input");
   const searchButton = document.querySelector("#search-button");
   searchButton.addEventListener("click", () => {
     document.querySelector(".pictures-div").innerHTML = "";
