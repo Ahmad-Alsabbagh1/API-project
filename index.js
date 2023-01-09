@@ -21,7 +21,6 @@ const searchImage = (query) => {
 
 const showImages = (pictures) => {
   const wallpapers = pictures.photos;
-  console.log(pictures);
   wallpapers.forEach((pic) => {
     appendImage(pic.src.large, pic.alt, pic.photographer, pic.url);
   });
