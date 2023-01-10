@@ -18,7 +18,7 @@ The website is of course responsive and you can use it on : computer/laptop, Ipa
 
 You can clone this project if you wish to by following these steps:
 - You need to download [git](https://git-scm.com/) and install it.
-- Type in the command: **cd Desktop/ .
+- Type in the command: **cd Desktop/** .
 - After that run this command **https://github.com/Ahmad-Alsabbagh1/Ahmad-Alsabbagh1.github.io.git** .
 - Congratulations, you have successfully cloned my repository and its on your desktop.
 
