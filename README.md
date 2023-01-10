@@ -14,7 +14,7 @@ For handling errors, e.g.: no internet connection, the user will get an pop-up a
 Also a loading screen will show till the wallpapers are shown or when the user refreshes the page.   
 The website is of course responsive and you can use it on : computer/laptop, Ipads/Tablets, and phones. 
    
-:point_right:[If you wish to try the website you can click here](https://ahmad-alsabbagh1.github.io/)  
+:point_right: [If you wish to try the website you can click here](https://ahmad-alsabbagh1.github.io/)  
 
 You can clone this project if you wish to by following these steps:
 - You need to download [git](https://git-scm.com/) and install it.
