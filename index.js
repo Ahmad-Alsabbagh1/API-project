@@ -10,7 +10,7 @@ window.onload = () => {
   const nextPage = document.querySelector(".nextPage");
   nextPage.style.display = "none";
 
-  loader.style.display = "none"; //none
+  loader.style.display = "none";
 
   const searchImage = () => {
     loader.style.display = "flex";
@@ -34,7 +34,7 @@ window.onload = () => {
             error
         )
       )
-      .finally(() => (loader.style.display = "none")); //none
+      .finally(() => (loader.style.display = "none"));
   };
 
   const showImages = (pictures) => {

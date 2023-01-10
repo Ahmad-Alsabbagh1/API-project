@@ -31,7 +31,6 @@ header {
   display: flex;
   margin-top: 20px;
   max-height: 10vh;
-
 }
 
 #search-input {
@@ -67,26 +66,21 @@ header {
   width: 100%;
   height: 20vw;
 }
-.pagination{
-    display:flex;
-justify-content: flex-end;
+.pagination {
+  display: flex;
+  justify-content: flex-end;
 }
-.previousPage{
-    height: 10vh;
-    width: 10vw;
-    border-radius: 30px;
-    margin: 20px 5px 20px 0px;
-
-    
-
-}.nextPage{
-    height: 10vh;
-    width: 10vw;
-    border-radius: 30px;
-    margin: 20px 20px 20px 5px;
-
-
-
+.previousPage {
+  height: 10vh;
+  width: 10vw;
+  border-radius: 30px;
+  margin: 20px 5px 20px 0px;
+}
+.nextPage {
+  height: 10vh;
+  width: 10vw;
+  border-radius: 30px;
+  margin: 20px 20px 20px 5px;
 }
 
 /* loader */
@@ -100,7 +94,6 @@ justify-content: flex-end;
   background-color: rgba(30, 20, 20, 0.4);
   justify-content: center;
   align-items: center;
-  
 }
 
 .spin {
@@ -111,7 +104,6 @@ justify-content: flex-end;
   border-top: 10px solid pink;
   border-bottom: 10px solid pink;
   animation: round 3s linear infinite;
-
 }
 
 @keyframes round {
@@ -128,8 +120,8 @@ justify-content: flex-end;
   .logo-div img {
     width: 20vw;
   }
-  ::placeholder{
-    font-size: small
+  ::placeholder {
+    font-size: small;
   }
   .search-wrap {
     width: 50vw;
@@ -143,24 +135,26 @@ justify-content: flex-end;
   .pictures-div {
     grid-template-columns: repeat(2, 45vw);
   }
-  .previousPage,.nextPage{
-
+  .previousPage,
+  .nextPage {
     width: 20vw;
-
   }
 }
 /* Ipad @media query */
 @media all and (min-width: 501px) and (max-width: 1024px) {
-    *,#search-input,#search-button{font-size: x-large;}
+  *,
+  #search-input,
+  #search-button {
+    font-size: x-large;
+  }
   .logo-div img {
     width: 20vw;
   }
-  ::placeholder{
+  ::placeholder {
     font-size: 1em;
   }
   .search-wrap {
     width: 50vw;
-    
   }
   #search-input {
     width: 30vw;
@@ -172,8 +166,8 @@ justify-content: flex-end;
   .pictures-div {
     grid-template-columns: repeat(3, 30vw);
   }
-  .previousPage,.nextPage{
+  .previousPage,
+  .nextPage {
     width: 15vw;
-
   }
 }

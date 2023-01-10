@@ -9,7 +9,7 @@ When the 40 pictures are loaded a **"Next Page"** button will appear to load a n
 The **"Next Page"** button is hidden when there is no more results then the ones visible on the screen.  
 The **"Previous Page"** button only appears when you have have pressed the **"Next Page"** button and loaded another page if you would like to go back to the previous page.  
   
-For handling errors, e.g.:no internet connection, the user will get an pop-up alert from the browser.  
+For handling errors, e.g.: no internet connection, the user will get an pop-up alert from the browser.  
 Also a loading screen will show till the wallpapers are shown or when the user refreshes the page.   
 The website is of course responsive and you can use it on : computer/laptop, Ipads/Tablets, and phones. 
    
