@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: serif;
 }
 body {
   display: flex;
@@ -83,6 +83,10 @@ header {
   border-radius: 30px;
   margin: 20px 20px 20px 5px;
   display: none;
+}
+button,#search-input{
+outline: none;
+  border: solid 2px black;
 }
 
 /* loader */

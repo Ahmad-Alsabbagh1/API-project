@@ -3,7 +3,8 @@
 This simple website is made using [Pexels](https://www.pexels.com/) API in a week for a small project, It can be used to look for wallpapers or just to browse some pictures.  
   
 For the photographer's name you can hover over the wallpaper, for more information about the picture or if you wish to download it, you can click on the picture and it will direct you to the original picture on [Pexels](https://www.pexels.com/) page. 
-You are able to search with clicking the search button or simply by hitting **Enter/Return** on your keyboard.  
+You are able to search with clicking the search button after typing or simply by hitting **Enter/Return** on your keyboard.
+The search bar is **not** case-sensitive  
   
 When the 40 pictures are loaded a **"Next Page"** button will appear to load a next page with 40 other pictures if you want to see more results.  
 The **"Next Page"** button is hidden when there is no more results then the ones visible on the screen.  

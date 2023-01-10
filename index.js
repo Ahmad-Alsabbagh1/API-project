@@ -9,7 +9,6 @@ window.onload = () => {
   previousPage.style.display = "none";
   const nextPage = document.querySelector(".nextPage");
   nextPage.style.display = "none";
-
   loader.style.display = "none";
 
   const searchImage = () => {
@@ -42,7 +41,11 @@ window.onload = () => {
     wallpapers.forEach((pic) => {
       appendImage(pic.src.large, pic.alt, pic.photographer, pic.url);
     });
-    nextPage.style.display = "inline";
+    nextPage.style.display = "none"; //When searching something that has more pages to load and then after search for something
+    //that doesn't have more pages the next button would still appear, this code prevents that
+    if (wallpapers.length === 40) {
+      nextPage.style.display = "inline";
+    }
     if (page > 1) {
       previousPage.style.display = "inline";
     }
