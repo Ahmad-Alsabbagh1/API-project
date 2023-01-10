@@ -49,6 +49,9 @@ window.onload = () => {
   };
 
   const appendImage = (url, alt, photographer, href) => {
+    if (page === 1) {
+      previousPage.style.display = "none";
+    }
     const link = document.createElement("a");
     link.href = href;
     link.target = "_blank"; //To open image in new tab
